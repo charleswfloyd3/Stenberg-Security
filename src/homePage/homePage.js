@@ -12,7 +12,7 @@ AOS.init();
             <div className='homepage-left'>
                 <p className="headline">Saving People<br></br>Millions Everyday.</p>
                 <p className="description">
-                    Protecting your computer is more important now then ever. Security breaches and financial scams have increased by over 70% since the start of the pandemic.
+                    Protecting your computer is more important now than ever. Security breaches and financial scams have increased by over 70% since the start of the pandemic.
                     Don't be cheap and pay later. For the cost of  a cup of coffee a month, you'll be secure, guaranteed. Don't be cheap, be smart and start saving now. 
                 </p>
                 <div className="infoBtns">
