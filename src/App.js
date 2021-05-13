@@ -5,6 +5,7 @@ import HomePage from './homePage/homePage';
 import Affiliations from './affiliations/affiliations';
 import {BrowserRouter as  Switch, Route}  from 'react-router-dom';
 import Signin from './signin/signin';
+import Footer from './footer/footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Navbar />
           <HomePage />
           <Affiliations />
+          <Footer />
         </Route>
         <Route exact path="/signin">
           <Signin />

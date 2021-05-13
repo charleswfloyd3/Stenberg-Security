@@ -18,8 +18,6 @@ body::before {
 	background-size: cover;
 	background-position-y: 00px;
 	opacity: 0.34;
-	min-height: 100vh;
-	max-height: 100vh;
 	min-width: 100vw;
 	max-width: 100vw;
 }
