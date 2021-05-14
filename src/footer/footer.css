@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Marcellus+SC&family=Nova+Flat&display=swap");
 .footer-container {
 	height: 240px;
 	/* background-color: rgb(205, 216, 248); */
@@ -26,7 +27,6 @@
 	list-style: none;
 }
 
-.contactSectionTitle,
 .companySectionTitle,
 .servicesSectionTitle,
 .supportSectionTitle {
@@ -37,6 +37,20 @@
 	width: fit-content;
 	font-weight: 400;
 }
+
+.contactSectionTitle {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	letter-spacing: 2px;
+	font-size: 30px;
+	width: fit-content;
+	font-weight: 900;
+	color: royalblue;
+	font-family: "Marcellus SC", serif;
+	display: flex;
+	cursor: pointer;
+	margin-top: 10px;
+}
 li {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
 		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -45,8 +59,75 @@ li {
 	font-weight: 100;
 	white-space: nowrap;
 }
-/* @media (max-width: 1215px) {
+.brandDescrip {
+	font-size: 16px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	font-weight: 300;
+	margin-top: -4px;
+	letter-spacing: 0px;
+	padding-right: 40px;
+	width: 380px;
+	position: absolute;
+	padding-bottom: 10px;
+}
+.appStores {
+	margin-left: 2px;
+	display: flex;
+	margin-top: 80px;
+	position: absolute;
+}
+
+.appStore {
+	height: 38px;
+	margin-right: 10px;
+	cursor: pointer;
+	opacity: 0.9;
+}
+.googlePlay {
+	height: 38px;
+	cursor: pointer;
+	opacity: 0.8;
+}
+.appStore:hover {
+	opacity: 1;
+}
+.googlePlay:hover {
+	opacity: 1;
+}
+.socialMedia {
+	display: flex;
+	margin-top: 178px;
+	margin-left: -2px;
+}
+.socialMedia img:nth-child(1) {
+	margin-left: 0px;
+}
+.socialMedia img {
+	margin-left: 28px;
+	opacity: 0.8;
+	cursor: pointer;
+}
+.socialMedia img:hover {
+	opacity: 1;
+}
+.socialIcon {
+	height: 20px;
+}
+@media (max-width: 1215px) {
 	.footer-container {
-		display: block;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		justify-items: center;
+		align-items: center;
+		/* margin-bottom: 180px; */
 	}
-} */
+
+	.footer-container ul {
+		margin-left: 0px;
+	}
+	.footer-container ul:nth-child(4) {
+		margin-top: 47px;
+	}
+}

@@ -1,23 +1,27 @@
 body {
-	margin: 0;
+	margin: 0px;
 	overflow-x: hidden;
-	/* background-image: url(loginBackground.jpg); */
-	background-size: cover;
+	/* background-image: url(loginBackground.jpg);
+	background-size: cover; */
+	/* background-repeat: repeat-y;
+	background-size: 100% auto; */
 }
-body::before {
+.homepage::before {
 	content: "";
 
 	position: absolute;
 	margin: 0 auto;
 	z-index: -10;
 	top: 0;
-	bottom: 0;
+	bottom: -500px;
 	left: 0;
 	right: 0;
 	background: url(loginBackground.jpg);
-	background-size: cover;
-	background-position-y: 00px;
-	opacity: 0.34;
+	background-repeat: repeat;
+	background-position-y: 0px;
+	opacity: 0.84;
 	min-width: 100vw;
 	max-width: 100vw;
+	background-repeat: repeat-y;
+	background-size: 100% auto;
 }

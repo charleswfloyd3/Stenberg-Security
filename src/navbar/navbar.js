@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="nav-container">
             <nav className="nav-inner">
             <ul className="nav-left">
-                <li className="companyLogo" onClick={()=>{window.location.reload(false);}}><img src="images/logo.png" className="logoNav"></img> SteinbergSecurity</li>
+                <li className="companyLogo" > <a href="" style={{color:"royalblue", textDecoration:"none"}}>SteinbergSecurity</a></li>
                 <li className="productsBtn">Products<img className="caretDown" src="images/caretDown.png"></img></li>
                 <li className="resourcesBtn">Resources<img className="caretDown" src="images/caretDown.png"></img></li>
                 <li className="pricingBtn">Pricing</li>

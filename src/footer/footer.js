@@ -26,9 +26,20 @@ const Footer = () => {
                 <li>Trust &amp; Privacy </li>                
             </ul>
             <ul className="contactSection"> 
-                <p className="contactSectionTitle">Contact</p>
-                <li> (650) 542-9537</li>
-                <li>support@steinbergsecurity.com</li>
+                <p className="contactSectionTitle"><a  href="" style={{color:"royalblue", textDecoration:"none"}}>SteinbergSecurity</a></p>
+                <p className="brandDescrip">
+                    A community collectively saving businesses, schools, and indivuals millions every day since 2008.
+                </p>
+                <div className="appStores">
+                    <img src="images/appStore.png"className="appStore"></img>
+                    <img src="images/googlePlay.png" className="googlePlay"></img>
+                </div>
+                <div className="socialMedia">
+                    <img src="images/facebook.png" className="socialIcon"></img>
+                    <img src="images/instagram.png"  className="socialIcon"></img>
+                    <img src="images/twitter.png"  className="socialIcon"></img>                     <img src="images/linkedIn.png"  className="socialIcon"></img>                     <img src="images/youtube.png"  className="socialIcon"></img>
+                    <img src="images/medium.png"  className="socialIcon"></img>                   
+                </div>
             </ul>
         </div>
     )
