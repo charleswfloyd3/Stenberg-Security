@@ -66,31 +66,23 @@
 	.affiliation-inner li {
 		margin-left: 85px;
 	}
-	.affiliation-inner {
-		margin-top: 105px;
+	.affiliation-container {
+		margin-top: 150px;
 	}
 }
 @media (max-width: 1020px) {
-	.affiliation-inner {
-		margin-top: 100px;
-	}
 	.affiliation-inner li {
 		margin-left: 6vw;
 	}
 }
 @media (max-width: 830px) {
-	.affiliation-inner {
-		margin-top: 100px;
-	}
 	.affiliation-inner li {
 		margin-left: 1vw;
 	}
 }
 @media (max-height: 720px) {
 	.affiliationsTitle {
-		margin-bottom: -110px;
-	}
-	.affiliation-container {
-		margin-top: -40px;
+		margin-top: -90px;
+		margin-bottom: -10px;
 	}
 }
