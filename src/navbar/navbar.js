@@ -16,7 +16,7 @@ const Navbar = () => {
             <ul className="nav-right">
                 <li className="phoneBtn"><img src="images/phone.png" className="phoneIcon"></img> &nbsp; 1 (650) 542-9537</li>
                 <li className="signinBtn"><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/signin">Sign in</Link></li>
-                <li className="getstartedBtn">Get started free</li>
+                <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/signup"><li className="getstartedBtn">Get started free</li></Link>
 
             </ul>
             </nav>

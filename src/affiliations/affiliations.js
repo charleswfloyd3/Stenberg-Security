@@ -3,7 +3,7 @@ import './affiliations.css'
 const Affiliations = () => {
     return (
         <div className="affiliation-container">
-            {/* <p className='affiliationsTitle'>Endorsed by...</p> */}
+            <p className='affiliationsTitle'>AS FEATURED IN</p>
             <div className="affiliation-inner">
             <li><img src="images/cbs.png" className="cbs"></img></li>
 
@@ -12,7 +12,6 @@ const Affiliations = () => {
             <li><img src="images/forbes.png" className="forbes"></img></li>
 
             <li><img src="images/newYorkTimes.png" className="newYorkTimes"></img></li>
-            {/* <li><img src="images/harvard.png" className="harvard"></img></li> */}
             <li><img src="images/google2.png" className="google"></img></li>
             <li><img src="images/npr.png" className="npr"></img></li>
 

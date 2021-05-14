@@ -1,5 +1,7 @@
 import React from 'react'
 import './signin.css'
+import Footer from '../footer/footer';
+
 import {Link}  from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -8,6 +10,7 @@ const Signin = () => {
 AOS.init();
 
     return (
+        <div>
         <div className="signin-container" >
             <div className="signin-inner" data-aos="zoom-in">
                 <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/"><p className="companyNameSignIn"><p className="companyName">SteinbergSecurity</p></p></Link>
@@ -34,10 +37,11 @@ AOS.init();
                     </li>
                 </div>
                 <div className="support">
-                    <p className="newAcc">Need an account?</p>
+                    <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/signup"><p className="newAcc">Need an account?</p></Link>
                     <p className="forgotPass">Forgot Password?</p>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
