@@ -7,6 +7,7 @@ const HomePage = () => {
 AOS.init();
 
     return (
+        <div>
         <div className="homepage" data-aos="fade-down" data-aos-duration="600" >
 
             <div className='homepage-left'>
@@ -24,6 +25,9 @@ AOS.init();
             <div className='homepage-right' >
                 <img src="images/safety.jpg" className="homepageImage"></img>
             </div>
+
+        </div>
+     
         </div>
     )
 }

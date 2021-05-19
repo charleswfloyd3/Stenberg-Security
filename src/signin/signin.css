@@ -33,7 +33,7 @@
 }
 .companyNameSignIn:hover {
 	cursor: pointer;
-	opacity: 0.7;
+	opacity: 0.8;
 }
 .logoLogin {
 	height: 24px;
@@ -125,7 +125,6 @@ button:focus {
 	height: 50px;
 	font-size: 16px;
 	border: 0.1px solid white;
-	/* opacity: 0.9; */
 	background-color: rgb(62, 182, 182);
 	color: white;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,

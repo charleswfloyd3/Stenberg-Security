@@ -7,6 +7,8 @@ import {BrowserRouter as  Switch, Route}  from 'react-router-dom';
 import Signin from './signin/signin';
 import Footer from './footer/footer';
 import Signup from './signup/signup';
+import Pricing from './pricing/pricing';
+import Advert from './advert/advert';
 
 function App() {
   return (
@@ -16,13 +18,18 @@ function App() {
           <Navbar />
           <HomePage />
           <Affiliations />
+          {/* <Advert /> */}
+
           <Footer />
         </Route>
         <Route exact path="/signin">
           <Signin />
         </Route>
-        <Route exact path="/signup">
+        <Route exact path="/start-free-trial">
           <Signup />
+        </Route>
+        <Route exact path="/pricing">
+          <Pricing />
         </Route>
       </div>
     </Switch>

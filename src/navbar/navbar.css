@@ -28,7 +28,7 @@
 }
 .companyLogo {
 	margin-left: 0px;
-	font-size: 22px;
+	font-size: 24px;
 	/* color: rgb(81, 21, 177); */
 	color: royalblue;
 	letter-spacing: 1px;
@@ -57,7 +57,7 @@
 .resourcesBtn,
 .pricingBtn {
 	margin-left: 30px;
-	font-size: 15px;
+	font-size: 16px;
 	margin-top: -10px;
 	font-weight: 400;
 	letter-spacing: 0.6px;
@@ -68,19 +68,26 @@
 	padding-top: 10px;
 	cursor: pointer;
 	border-top: 3px solid transparent;
+	opacity: 1;
 }
 
 .pricingBtn:hover,
 .resourcesBtn:hover,
 .productsBtn:hover {
-	opacity: 1;
-
 	border-top: 2px solid royalblue;
+
+	opacity: 1;
 }
+
 .caretDown {
 	height: 20px;
 	padding-left: 3px;
 	padding-top: 2px;
+	opacity: 0.7;
+}
+.productsBtn:hover .caretDown,
+.resourcesBtn:hover .caretDown {
+	opacity: 1;
 }
 .nav-right {
 	list-style: none;

@@ -37,7 +37,7 @@ AOS.init();
                     </li>
                 </div>
                 <div className="support">
-                    <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/signup"><p className="newAcc">Need an account?</p></Link>
+                    <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/start-free-trial" onClick={()=>{window.scrollTo(0, 0)}}><p className="newAcc">Need an account?</p></Link>
                     <p className="forgotPass">Forgot Password?</p>
                 </div>
             </div>

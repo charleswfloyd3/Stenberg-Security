@@ -37,6 +37,7 @@
 	width: fit-content;
 	font-weight: 500;
 	opacity: 0.8;
+	cursor: default;
 }
 
 .contactSectionTitle {
@@ -60,6 +61,7 @@ li {
 	font-weight: 400;
 	opacity: 0.6;
 	white-space: nowrap;
+	cursor: pointer;
 }
 .brandDescrip {
 	font-size: 16px;
@@ -127,13 +129,20 @@ li {
 		grid-template-rows: 1fr 1fr;
 		justify-items: center;
 		align-items: center;
+		margin-left: -10vw;
 		/* margin-bottom: 180px; */
 	}
 
 	.footer-container ul {
 		margin-left: 0px;
 	}
+
+	.footer-container ul:nth-child(3) {
+		margin-top: -85px;
+		margin-left: 27.5px;
+	}
 	.footer-container ul:nth-child(4) {
 		margin-top: 47px;
+		margin-right: 20px;
 	}
 }

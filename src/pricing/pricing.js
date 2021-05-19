@@ -1,15 +1,15 @@
 import React from 'react'
+import '../signup/signup.css'
 import Footer from '../footer/footer'
 import Navbar from '../navbar/navbar'
-import './signup.css'
-const Signup = () => {
+const Pricing = () => {
     return (
         <div>
           <Navbar />
         <div className="signup-container">
             <div className="signup-inner">
                 <div className="signup-left">
-                    <p className="signupTitle">Try SteinbergSecurity for free</p>
+                    <p className="signupTitle2">Request a quote</p>
                     <p className="signupDescrip">
                         With a suite that includes multi-OS device filtering and monitoring, backend encrytopn, and phising prevention, SteinbergSecurity has everything you need to support a successful  technology program.
                     </p>
@@ -50,4 +50,4 @@ const Signup = () => {
     )
 }
 
-export default Signup;
+export default Pricing;
