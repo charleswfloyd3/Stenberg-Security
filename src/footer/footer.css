@@ -30,8 +30,6 @@
 .companySectionTitle,
 .servicesSectionTitle,
 .supportSectionTitle {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	letter-spacing: 1px;
 	font-size: 16px;
 	width: fit-content;
@@ -41,21 +39,17 @@
 }
 
 .contactSectionTitle {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	letter-spacing: 2px;
 	font-size: 30px;
 	width: fit-content;
 	font-weight: 900;
 	color: royalblue;
-	font-family: "Marcellus SC", serif;
 	display: flex;
 	cursor: pointer;
 	margin-top: 10px;
+	font-family: "Marcellus SC", serif;
 }
 li {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	letter-spacing: 0.5px;
 	font-size: 14px;
 	font-weight: 400;
@@ -65,8 +59,7 @@ li {
 }
 .brandDescrip {
 	font-size: 16px;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
 	font-weight: 400;
 	margin-top: -8px;
 	letter-spacing: 0px;

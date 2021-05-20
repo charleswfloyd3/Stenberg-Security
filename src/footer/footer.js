@@ -26,7 +26,7 @@ const Footer = () => {
                 <li>Trust &amp; Privacy </li>                
             </ul>
             <ul className="contactSection"> 
-                <p className="contactSectionTitle"><a  href="" style={{color:"royalblue", textDecoration:"none"}}>SteinbergSecurity</a></p>
+                <p ><a  href="" style={{color:"royalblue", textDecoration:"none"}}className="contactSectionTitle">SteinbergSecurity</a></p>
                 <p className="brandDescrip">
                     A community collectively saving businesses, schools, and indivuals millions every day since 2008.
                 </p>

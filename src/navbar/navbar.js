@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './navbar.css'
 import {Link}  from 'react-router-dom';
 
 const Navbar = () => {
+    const [dropdown, setdropdown] = useState(true)
     return (
         <div className="nav-container">
             <nav className="nav-inner">
@@ -20,9 +21,33 @@ const Navbar = () => {
 
             </ul>
             </nav>
-            <ul className="hamburgerIcon">
-                &#9776;
-            </ul>
+           {dropdown ? <ul className="hamburgerIcon" onClick={()=>{setdropdown(false)}}>&#9776;</ul>:
+            <div><ul className="hamburgerIcon" onClick={()=>{setdropdown(true)}}>&#10006;</ul>            <ul className="navDropdown">
+                <p className="dropdownTitle">Products</p>
+                <ul className="productsDropdown">
+                    <p className="suiteBtn">The Suite</p>
+                    <p className="dnsBtn">DNS</p>
+                    <p className="dnsBtn">Admin</p>
+                    <p className="adminBtn">Fleet</p>
+                    <p className="teacherBtn">Teacher</p>
+                    <p className="beaconBtn">Beacon</p>
+                </ul>
+                <ul className="dropdownFooter">
+                    <p className="suiteBtn">Pricing</p>
+                    <p className="adminBtn">Contact Us</p>
+
+                    <p className="dnsBtn">Blog</p>
+                    <p className="teacherBtn">Success Stories</p>
+
+                    <p className="dnsBtn">Help Center</p>
+                </ul>
+                <ul className="signupandin">
+                    <p className="signInDrop">Sign in</p>
+                    <p className="signUpDrop">Get started free</p>
+
+                </ul>
+            </ul></div>} 
+
         </div>
     )
 }
