@@ -186,7 +186,7 @@
 }
 .productsDropdown {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 0.75fr;
 	width: 90%;
 	grid-template-rows: 40px 40px 40px;
 	margin-left: -23px;
@@ -218,6 +218,7 @@
 	left: 165px;
 	margin-top: 10px;
 	position: absolute;
+	cursor: pointer;
 }
 .signUpDrop {
 	background-color: royalblue;
@@ -230,6 +231,7 @@
 	top: 36px;
 	border-radius: 4px;
 	width: 89%;
+	cursor: pointer;
 }
 @media (max-width: 1384px) {
 	.nav-container {
@@ -277,4 +279,61 @@
 	.navDropdown {
 		display: none;
 	}
+}
+.dnsIcon {
+	margin-right: 10px;
+	border: 0.1px solid transparent;
+	border-radius: 180px;
+	background-position: rgb(255, 249, 226);
+	padding: 4px;
+	position: absolute;
+	margin-left: -30px;
+	color: rgb(242, 196, 1);
+	font-size: 14px;
+}
+.adminIcon {
+	margin-right: 10px;
+	border: 0.1px solid transparent;
+	border-radius: 180px;
+	background: rgb(239, 249, 255);
+	padding: 4px;
+	position: absolute;
+	margin-left: -30px;
+	color: rgb(13, 47, 104);
+
+	font-size: 14px;
+}
+.teacherIcon {
+	margin-right: 10px;
+	border: 0.1px solid transparent;
+	border-radius: 180px;
+	background: rgb(214, 244, 255);
+	padding: 4px;
+	position: absolute;
+	margin-left: -30px;
+	color: rgb(0, 165, 223);
+
+	font-size: 14px;
+}
+.beaconIcon {
+	margin-right: 10px;
+	border: 0.1px solid transparent;
+	border-radius: 180px;
+	background: rgb(216, 255, 248);
+	padding: 4px;
+	position: absolute;
+	margin-left: -30px;
+	color: rgb(1, 205, 169);
+	font-size: 14px;
+}
+.fleetIcon {
+	margin-right: 10px;
+	border: 0.1px solid transparent;
+	border-radius: 180px;
+	background-color: rgb(255, 237, 216);
+	padding: 4px;
+	position: absolute;
+	margin-left: -30px;
+	color: rgb(232, 125, 4);
+	font-size: 14px;
 }
