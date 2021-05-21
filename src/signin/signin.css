@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Marcellus+SC&family=Nova+Flat&display=swap");
 .signin-container {
-	background-image: url("background.jpeg");
+	background-image: url("background.png");
 	background-size: cover;
 	/* background-color: white; */
 	display: flex;

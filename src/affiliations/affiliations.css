@@ -14,6 +14,9 @@
 	align-items: center;
 	margin-left: -2px;
 }
+.affiliation-inner-mobile {
+	display: none;
+}
 .affiliationsTitle {
 	text-align: center;
 	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -77,12 +80,40 @@
 }
 @media (max-width: 830px) {
 	.affiliation-inner li {
-		margin-left: 1vw;
+		margin-left: 3vw;
 	}
 }
 @media (max-height: 720px) {
 	.affiliationsTitle {
 		margin-top: -90px;
 		margin-bottom: -10px;
+	}
+}
+@media (max-width: 720px) {
+	.affiliation-inner {
+		display: none;
+	}
+	.affiliation-inner-mobile {
+		display: block;
+		list-style: none;
+	}
+	.affiliation-inner-mobile div {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.affiliation-inner-mobile div:nth-child(1) li:nth-child(1),
+	.affiliation-inner-mobile div:nth-child(2) li:nth-child(1) {
+		margin-left: 0px;
+	}
+	.affiliation-inner-mobile div:nth-child(1) li {
+		margin-left: 10vw;
+	}
+	.affiliation-inner-mobile div:nth-child(2) li {
+		margin-left: 20vw;
+	}
+	.affiliation-inner-mobile div:nth-child(1) {
+		margin-bottom: 20px;
+		margin-top: 20px;
 	}
 }
