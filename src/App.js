@@ -9,6 +9,8 @@ import Footer from './footer/footer';
 import Signup from './signup/signup';
 import Pricing from './pricing/pricing';
 import Advert from './advert/advert';
+import Testimonials from './testimonials/testimonials';
+import Grabber from './grabber/grabber';
 
 function App() {
   return (
@@ -18,8 +20,10 @@ function App() {
           <Navbar />
           <HomePage />
           <Affiliations />
-          {/* <Advert /> */}
-
+          <Grabber />
+          <Advert />
+          
+          {/* <Testimonials /> */}
           <Footer />
         </Route>
         <Route exact path="/signin">

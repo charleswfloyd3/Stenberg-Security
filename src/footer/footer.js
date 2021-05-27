@@ -2,6 +2,27 @@ import React from 'react'
 import './footer.css'
 const Footer = () => {
     return (
+        <div className="footer-outer">
+            <div className="footer-top">
+                <img src="images/cloud.png" className="aff"></img>
+                <img src="images/microsoft.png" className="aff"></img>
+                <img src="images/student.jpg" className="aff"></img>
+                <img src="images/ferpa.jpg" className="aff"></img>
+                <img src="images/ida.jpg" className="aff"></img>
+                <img src="images/gei.jpg" className="aff"></img>
+            </div>
+           <div className="footer-top-mobile">
+               <div className="footer-top-mobile-top">             <img src="images/microsoft.png" className="aff"></img> <img src="images/cloud.png" className="aff"></img>
+   
+                <img src="images/student.jpg" className="aff"></img>
+
+                </div>
+               <div className="footer-top-mobile-bottom">
+                <img src="images/ferpa.jpg" className="aff"></img>                   
+                <img src="images/ida.jpg" className="aff"></img>
+                <img src="images/gei.jpg" className="aff"></img>
+                </div>
+            </div>
         <div className="footer-container">
             <ul className="companySection"> 
                 <p className="companySectionTitle">Company</p>
@@ -40,7 +61,9 @@ const Footer = () => {
                     <img src="images/twitter.png"  className="socialIcon"></img>                     <img src="images/linkedIn.png"  className="socialIcon"></img>                     <img src="images/youtube.png"  className="socialIcon"></img>
                     <img src="images/medium.png"  className="socialIcon"></img>                   
                 </div>
+                {/* <p>SteinbergSecurity 2021. All rights reserved&copy;</p> */}
             </ul>
+        </div>
         </div>
     )
 }

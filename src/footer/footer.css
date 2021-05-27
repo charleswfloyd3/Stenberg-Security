@@ -1,11 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Marcellus+SC&family=Nova+Flat&display=swap");
+.footer-outer {
+	display: block;
+}
+
+.footer-top {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	margin-top: 200px;
+	border-top: 0.1px solid rgb(221, 221, 221);
+	padding-top: 40px;
+}
+.footer-top-mobile {
+	display: none;
+	width: 100vw;
+	margin-top: 200px;
+	border-top: 0.1px solid rgb(221, 221, 221);
+	padding-top: 40px;
+}
+.footer-top img:nth-child(1) {
+	margin-left: 0px;
+}
+.footer-top img {
+	margin-left: 40px;
+}
+.aff {
+	height: 40px;
+}
+@media (max-width: 700px) {
+	.footer-top {
+		display: none;
+	}
+	.footer-top-mobile {
+		display: block;
+	}
+	.footer-top-mobile-top,
+	.footer-top-mobile-bottom {
+		display: flex;
+		justify-content: center;
+	}
+	.footer-top-mobile-bottom {
+		padding-top: 30px;
+	}
+	.footer-top-mobile-top img:nth-child(1),
+	.footer-top-mobile-bottom img:nth-child(1) {
+		margin-left: 0px;
+	}
+	.footer-top-mobile-top img {
+		margin-left: 80px;
+		height: 30px;
+	}
+	.footer-top-mobile-bottom img {
+		margin-left: 124px;
+		height: 30px;
+	}
+}
+
 .footer-container {
 	height: 240px;
 	/* background-color: rgb(205, 216, 248); */
 	display: flex;
 	justify-content: center;
 	border-top: 0.1px solid rgb(221, 221, 221);
-	margin-top: 200px;
+	margin-top: 40px;
 	padding-top: 20px;
 }
 .footer-container ul:nth-child(1) {
@@ -139,3 +196,8 @@ li {
 		margin-right: 20px;
 	}
 }
+/* @media (max-width: 752px) {
+	.contactSection {
+		display: none;
+	}
+} */

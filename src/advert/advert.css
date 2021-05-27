@@ -1,14 +1,30 @@
 .homepage2 {
 	display: flex;
-	margin-top: 100px;
 	justify-content: center;
+	/* border: 1px solid black; */
+}
+.homepage2-inner {
+	display: flex;
+	/* margin-top: 100px; */
+	justify-content: center;
+	/* justify-content: space-between; */
+
+	padding-top: 40px;
+	width: 80vw;
+	/* border: 2px solid black; */
+	padding-bottom: 0px;
+	margin-left: -8px;
+}
+.homepage-left2-mobile {
+	display: none;
 }
 .homepage-left2 {
+	/* margin-left: 16px; */
+
 	display: block;
-	margin-right: 16px;
 }
 .headline2 {
-	font-size: 36px;
+	font-size: 46px;
 	font-weight: 600;
 	/* opacity:.8; */
 
@@ -21,22 +37,86 @@
 }
 .description2 {
 	font-size: 18px;
-	margin-left: 0px;
+	margin-left: 1px;
 	letter-spacing: 0.6px;
 
-	width: 500px;
+	width: 600px;
 	margin-top: -10px;
 	font-weight: 400;
 	opacity: 0.7;
 }
 .homepageImage2 {
-	margin-left: 72px;
-	margin-top: -70px;
-	height: 340px;
+	margin-left: 82px;
+	margin-top: -100px;
+	height: 500px;
 	border-radius: 2px;
 }
-/* @media (max-width:1020px){
-	.homepage-left2{
-		margin-left: 200;
+@media (max-width: 1340px) {
+	.homepage2-inner {
+		margin-top: -100px;
 	}
-} */
+	.homepage-left2 {
+		margin-left: -4px;
+	}
+	.headline2 {
+		font-size: 46px;
+	}
+	.description2 {
+		font-size: 18px;
+		width: 440px;
+		letter-spacing: 0.6px;
+		opacity: 0.8;
+	}
+
+	.homepageImage2 {
+		height: 380px;
+		margin-top: -40px;
+		margin-left: 136px;
+	}
+}
+
+@media (max-width: 1020px) {
+	.homepage-left2 {
+		display: none;
+	}
+	.homepage-left2-mobile {
+		display: block;
+	}
+
+	.homepage2-inner {
+		display: block;
+		margin-top: 300px;
+		margin-bottom: -140px;
+	}
+	.headline2 {
+		text-align: center;
+		white-space: normal;
+	}
+	.description2 {
+		text-align: center;
+		/* border: 2px solid black; */
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+		width: 80vw;
+	}
+	.homepageImage2 {
+		/* border: 2px solid black; */
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -40px;
+	}
+}
+@media (max-width: 750px) {
+	.homepage2-inner {
+		padding-top: 0px;
+		margin-top: 250px;
+	}
+}
+
+@media (max-width: 570px) {
+	.homepageImage2 {
+		height: 320px;
+	}
+}

@@ -1,0 +1,123 @@
+.grabber-container {
+	/* border: 2px solid black; */
+	justify-content: center;
+	width: 100vw;
+	height: 400px;
+	padding-bottom: 400px;
+	margin-top: -40px;
+}
+.grabber-inner {
+	width: 80vw;
+	/* border: 2px solid black; */
+
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+}
+.grabber-right {
+	cursor: pointer;
+}
+.grabber-right div {
+	border-left: 4px solid transparent;
+	padding-left: 20px;
+}
+.grabber-right div:hover {
+	border-left: 4px solid royalblue;
+}
+.grabber-headline {
+	text-align: center;
+	font-size: 46px;
+	color: royalblue;
+	letter-spacing: 2px;
+	font-weight: 600;
+	padding-bottom: 0px;
+}
+.grabber-description {
+	font-size: 18px;
+	margin-left: 1px;
+	letter-spacing: 0.6px;
+	text-align: center;
+	width: 60vw;
+	margin-top: -10px;
+	font-weight: 400;
+	opacity: 0.7;
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+}
+.content {
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+}
+.content-outer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80vw;
+	/* border: 0.1px solid black; */
+	/* margin-left: -10px; */
+	padding-top: 30px;
+}
+
+.infoImg {
+	height: 400px;
+	padding-right: 176px;
+	margin-top: 10px;
+}
+
+.content-title {
+	font-size: 22px;
+	font-weight: 500;
+	opacity: 0.8;
+}
+.content-descrip {
+	width: 400px;
+	font-weight: 400;
+	opacity: 0.7;
+}
+.learnmore {
+	color: rgb(73, 198, 255);
+	font-weight: 400;
+	cursor: pointer;
+}
+@media (max-width: 1340px) {
+	.content-outer {
+		padding-top: 40px;
+	}
+	.infoImg {
+		height: 304px;
+		margin-top: -26px;
+		padding-right: 166px;
+	}
+	.grabber-right {
+		margin-left: -20px;
+	}
+	.content-title {
+		margin-bottom: -10px;
+	}
+	.learnmore {
+		margin-top: -10px;
+	}
+}
+@media (max-width: 1020px) {
+	.content-outer {
+		display: block;
+		/* margin-bottom: 1000px; */
+	}
+	.infoImg {
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+		padding-right: 0px;
+		height: 48.5vw;
+	}
+	.grabber-description {
+		width: 90vw;
+	}
+	.grabber-right {
+		/* padding-left: 62px; */
+		position: absolute;
+		padding-top: 20px;
+	}
+}
