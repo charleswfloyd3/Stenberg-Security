@@ -121,3 +121,38 @@
 		padding-top: 20px;
 	}
 }
+@media (max-width: 475px) {
+	.content-descrip {
+		width: 300px;
+		font-size: 14px;
+	}
+	.grabber-headline {
+		font-size: 38px;
+	}
+	.grabber-description {
+		font-size: 16px;
+	}
+}
+@media (max-width: 431px) {
+	.content-descrip {
+		width: 300px;
+		font-size: 14px;
+	}
+	.grabber-headline {
+		font-size: 32px;
+	}
+	.grabber-description {
+		font-size: 16px;
+	}
+}
+@media (max-width: 390px) {
+	.grabber-headline {
+		font-size: 28px;
+	}
+	.content-descrip {
+		width: 200px;
+	}
+	.content-title {
+		font-size: 18px;
+	}
+}

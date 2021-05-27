@@ -120,3 +120,31 @@
 		height: 320px;
 	}
 }
+@media (max-width: 475px) {
+	.homepageImage2 {
+		height: 280px;
+		margin-top: -160px;
+	}
+	.headline2 {
+		font-size: 38px;
+	}
+	.description2 {
+		font-size: 16px;
+	}
+}
+@media (max-width: 431px) {
+	.headline2 {
+		font-size: 30px;
+		white-space: nowrap;
+	}
+}
+@media (max-width: 390px) {
+	.headline2 {
+		font-size: 28px;
+		white-space: normal;
+	}
+	.homepageImage2 {
+		height: 200px;
+		margin-top: -120px;
+	}
+}
