@@ -13,7 +13,7 @@ const Advert = () => {
             </div>
 
             <div className='homepage-right2' >
-                <LazyLoadImage src="images/devices.png" className="homepageImage2"/>
+                <img src="images/devices.png" className="homepageImage2"></img>
             </div>
             <div className='homepage-left2-mobile'>
                 <p className="headline2">Any device, anywhere.</p>
