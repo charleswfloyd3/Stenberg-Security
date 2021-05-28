@@ -1,4 +1,5 @@
 import React from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import './affiliations.css'
 const Affiliations = () => {
     return (
@@ -16,16 +17,16 @@ const Affiliations = () => {
             </div>
            <div className="affiliation-inner-mobile">
                <div>
-                    <li><img src="images/cbs.png" className="cbs"></img></li>
-                    <li><img src="images/newYorkTimes.png" className="newYorkTimes"></img></li>
+                    <li><LazyLoadImage src="images/cbs.png" className="cbs"/></li>
+                    <li><LazyLoadImage src="images/newYorkTimes.png" className="newYorkTimes"/></li>
 
                     <li><img src="images/forbes.png" className="forbes"></img></li>
                 </div>
                 <div>
-                    <li><img src="images/goldman.png" className="goldman"></img></li>
+                    <li><LazyLoadImage src="images/goldman.png" className="goldman"/></li>
 
-                    <li><img src="images/google2.png" className="google"></img></li>
-                    <li><img src="images/npr.png" className="npr"></img></li>
+                    <li><LazyLoadImage src="images/google2.png" className="google"/></li>
+                    <li><LazyLoadImage src="images/npr.png" className="npr"/></li>
                 </div>
             </div>
         </div>
