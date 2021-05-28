@@ -1,5 +1,4 @@
 import React from 'react'
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import './grabber.css'
 const Grabber = () => {
     return (
@@ -12,7 +11,7 @@ const Grabber = () => {
             <div  className="content">
             <div className='content-outer'>
                 <div className="grabber-left">
-                    <LazyLoadImage src="images/grabber.jpg" className="infoImg"/>
+                    <img src="images/grabber.jpg" className="infoImg"></img>
                 </div>
                 <div className="grabber-right">
                     <div > 
