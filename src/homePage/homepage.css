@@ -176,7 +176,8 @@ body[data-aos-duration="600"] [data-aos],
 	}
 	.infoBtns-mobile {
 		display: flex;
-		padding-top: 20px;
+		margin-top: -30px;
+		/* padding-top: 20px; */
 		justify-content: center;
 	}
 	.infoBtn-mobile {
