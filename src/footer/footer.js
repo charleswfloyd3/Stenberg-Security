@@ -55,8 +55,8 @@ const Footer = () => {
                     A community collectively saving businesses, schools, and indivuals millions every day since 2008.
                 </p>
                 <div className="appStores">
-                    <LazyLoadImage src="images/appStore.png"className="appStore"></img>
-                    <LazyLoadImage src="images/googlePlay.png" className="googlePlay"></img>
+                    <LazyLoadImage src="images/appStore.png"className="appStore" />
+                    <LazyLoadImage src="images/googlePlay.png" className="googlePlay" />
                 </div>
                 <div className="socialMedia">
                     <LazyLoadImage src="images/facebook.png" className="socialIcon"/>
