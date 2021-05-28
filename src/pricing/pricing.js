@@ -2,6 +2,7 @@ import React from 'react'
 import '../signup/signup.css'
 import Footer from '../footer/footer'
 import Navbar from '../navbar/navbar'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 const Pricing = () => {
     return (
         <div>
@@ -13,7 +14,7 @@ const Pricing = () => {
                     <p className="signupDescrip">
                         With a suite that includes multi-OS device filtering and monitoring, backend encrytopn, and phising prevention, SteinbergSecurity has everything you need to support a successful  technology program.
                     </p>
-                    <img src="images/stack.jpg" className="signupImage"></img>
+                    <LazyLoadImage src="images/stack.jpg" className="signupImage"/>
                 </div>
                 <div className="signup-right">
                 <form action="/action_page.php" className="signupform">
