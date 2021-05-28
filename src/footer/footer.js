@@ -1,17 +1,18 @@
 import React from 'react'
 import './footer.css'
 import {Link}  from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Footer = () => {
     return (
         <div className="footer-outer">
             <div className="footer-top">
-                <img src="images/cloud.png" className="aff"></img>
-                <img src="images/microsoft.png" className="aff"></img>
-                <img src="images/student.jpg" className="aff"></img>
-                <img src="images/ferpa.jpg" className="aff"></img>
-                <img src="images/ida.jpg" className="aff"></img>
-                <img src="images/gei.jpg" className="aff"></img>
+                <LazyLoadImage src="images/cloud.png" className="aff"/>
+                <LazyLoadImage src="images/microsoft.png" className="aff"/>
+                <LazyLoadImage src="images/student.jpg" className="aff"/>
+                <LazyLoadImage src="images/ferpa.jpg" className="aff"/>
+                <LazyLoadImage src="images/ida.jpg" className="aff"/>
+                <LazyLoadImage src="images/gei.jpg" className="aff"/>
             </div>
            <div className="footer-top-mobile">
                <div className="footer-top-mobile-top">             <img src="images/microsoft.png" className="aff"></img> <img src="images/cloud.png" className="aff"></img>
@@ -54,14 +55,16 @@ const Footer = () => {
                     A community collectively saving businesses, schools, and indivuals millions every day since 2008.
                 </p>
                 <div className="appStores">
-                    <img src="images/appStore.png"className="appStore"></img>
-                    <img src="images/googlePlay.png" className="googlePlay"></img>
+                    <LazyLoadImage src="images/appStore.png"className="appStore"></img>
+                    <LazyLoadImage src="images/googlePlay.png" className="googlePlay"></img>
                 </div>
                 <div className="socialMedia">
-                    <img src="images/facebook.png" className="socialIcon"></img>
-                    <img src="images/instagram.png"  className="socialIcon"></img>
-                    <img src="images/twitter.png"  className="socialIcon"></img>                     <img src="images/linkedIn.png"  className="socialIcon"></img>                     <img src="images/youtube.png"  className="socialIcon"></img>
-                    <img src="images/medium.png"  className="socialIcon"></img>                   
+                    <LazyLoadImage src="images/facebook.png" className="socialIcon"/>
+                    <LazyLoadImage src="images/instagram.png"  className="socialIcon"/>
+                    <LazyLoadImage src="images/twitter.png"  className="socialIcon"/>                     
+                    <LazyLoadImage src="images/linkedIn.png"  className="socialIcon"/>                     
+                    <LazyLoadImage src="images/youtube.png"  className="socialIcon"/>
+                    <LazyLoadImage src="images/medium.png"  className="socialIcon"/>                   
                 </div>
                 {/* <p>SteinbergSecurity 2021. All rights reserved&copy;</p> */}
             </ul>
@@ -76,10 +79,12 @@ const Footer = () => {
                     <img src="images/googlePlay.png" className="googlePlay"></img>
                 </div>
                 <div className="socialMedia">
-                    <img src="images/facebook.png" className="socialIcon"></img>
-                    <img src="images/instagram.png"  className="socialIcon"></img>
-                    <img src="images/twitter.png"  className="socialIcon"></img>                     <img src="images/linkedIn.png"  className="socialIcon"></img>                     <img src="images/youtube.png"  className="socialIcon"></img>
-                    <img src="images/medium.png"  className="socialIcon"></img>                   
+                    <LazyLoadImage src="images/facebook.png" className="socialIcon"/>
+                    <LazyLoadImage src="images/instagram.png"  className="socialIcon"/>
+                    <LazyLoadImage src="images/twitter.png"  className="socialIcon"/>                     
+                    <LazyLoadImage src="images/linkedIn.png"  className="socialIcon"/>                     
+                    <LazyLoadImage src="images/youtube.png"  className="socialIcon"/>
+                    <LazyLoadImage src="images/medium.png"  className="socialIcon"/>                   
                 </div>
                 {/* <p>SteinbergSecurity 2021. All rights reserved&copy;</p> */}
             </ul>
