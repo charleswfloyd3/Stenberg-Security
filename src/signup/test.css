@@ -1,0 +1,97 @@
+.testimonials-container {
+	/* border: 1px solid black; */
+	height: 180px;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+.testimonials-inner {
+	width: 90%;
+	height: 100%;
+	/* border: 1px solid black; */
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 40px;
+}
+.test1 {
+	/* border: 1px solid black; */
+	height: fit-content;
+	box-shadow: 0 1px 1px rgb(0 0 0 / 6%), 0 2px 2px rgb(0 0 0 / 6%),
+		0 4px 4px rgb(0 0 0 / 6%), 0 0 8px rgb(0 0 0 / 6%);
+	border-radius: 2.5px;
+}
+.testimonial {
+	font-size: 16px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-weight: 400;
+	opacity: 0.8;
+}
+.testProfile {
+	height: 46px;
+	border-radius: 180px;
+}
+.testProfileBox {
+	display: flex;
+	margin-left: 20px;
+}
+.testName {
+	font-weight: 600;
+	margin-left: 20px;
+	margin-top: 0px;
+}
+.testPosition {
+	margin-left: 21px;
+	font-size: 12px;
+	margin-top: -20px;
+	opacity: 0.8;
+	font-weight: 400;
+}
+.testInfo {
+	margin-top: -2px;
+}
+.test2 {
+	box-shadow: 0 1px 1px rgb(0 0 0 / 6%), 0 2px 2px rgb(0 0 0 / 6%),
+		0 4px 4px rgb(0 0 0 / 6%), 0 0 8px rgb(0 0 0 / 6%);
+	border-radius: 2.5px;
+	height: fit-content;
+}
+.test3 {
+	box-shadow: 0 1px 1px rgb(0 0 0 / 6%), 0 2px 2px rgb(0 0 0 / 6%),
+		0 4px 4px rgb(0 0 0 / 6%), 0 0 8px rgb(0 0 0 / 6%);
+	border-radius: 2.5px;
+	height: fit-content;
+}
+@media (max-width: 1000px) {
+	.testimonials-inner {
+		display: block;
+	}
+	.testimonials-inner .test1,
+	.test2,
+	.test3 {
+		width: 84vw;
+		display: table;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 20px;
+	}
+	.testimonials-container {
+		padding-bottom: 200px;
+	}
+}
+@media (max-width: 682px) {
+	.testimonials-container {
+		padding-bottom: 300px;
+	}
+}
+@media (max-width: 458px) {
+	.testimonials-container {
+		padding-bottom: 400px;
+	}
+}
+@media (max-width: 374px) {
+	.testimonials-container {
+		padding-bottom: 500px;
+	}
+}

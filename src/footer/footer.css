@@ -2,7 +2,9 @@
 .footer-outer {
 	display: block;
 }
-
+.contactSection-mobile {
+	display: none;
+}
 .footer-top {
 	display: flex;
 	justify-content: center;
@@ -26,34 +28,6 @@
 }
 .aff {
 	height: 40px;
-}
-@media (max-width: 700px) {
-	.footer-top {
-		display: none;
-	}
-	.footer-top-mobile {
-		display: block;
-	}
-	.footer-top-mobile-top,
-	.footer-top-mobile-bottom {
-		display: flex;
-		justify-content: center;
-	}
-	.footer-top-mobile-bottom {
-		padding-top: 30px;
-	}
-	.footer-top-mobile-top img:nth-child(1),
-	.footer-top-mobile-bottom img:nth-child(1) {
-		margin-left: 0px;
-	}
-	.footer-top-mobile-top img {
-		margin-left: 80px;
-		height: 30px;
-	}
-	.footer-top-mobile-bottom img {
-		margin-left: 124px;
-		height: 30px;
-	}
 }
 
 .footer-container {
@@ -197,8 +171,80 @@ li {
 	}
 }
 @media (max-width: 752px) {
+	/* .contactSection {
+		display: none;
+	} */
+}
+@media (max-width: 700px) {
 	.contactSection {
 		display: none;
+	}
+	.contactSection-mobile {
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+		/* border: 0.1px solid black; */
+		padding-left: 0px;
+	}
+	.contactSectionTitle {
+	}
+	.brandDescrip {
+	}
+	.footer-top {
+		display: none;
+	}
+	.footer-top-mobile {
+		display: block;
+		border-bottom: 0.1px solid rgb(221, 221, 221);
+		padding-bottom: 40px;
+	}
+	.footer-top-mobile-top,
+	.footer-top-mobile-bottom {
+		display: flex;
+		justify-content: center;
+	}
+	.footer-top-mobile-bottom {
+		padding-top: 30px;
+	}
+	.footer-top-mobile-top img:nth-child(1),
+	.footer-top-mobile-bottom img:nth-child(1) {
+		margin-left: 0px;
+	}
+	.footer-top-mobile-top img {
+		margin-left: 80px;
+		height: 30px;
+	}
+	.footer-top-mobile-bottom img {
+		margin-left: 124px;
+		height: 30px;
+	}
+	.footer-container {
+		display: block;
+		/* display: table;
+		margin-left: auto;
+		margin-right: auto; */
+		/* border: 2px solid black; */
+		border: none;
+		text-align: center;
+
+		margin-top: -20px;
+		margin-bottom: 200px;
+	}
+	.footer-container ul:nth-child(3) {
+		margin-left: 0px;
+		margin-top: 20px;
+	}
+	.footer-container ul:nth-child(1) {
+		margin-left: 0px;
+		margin-top: 0px;
+	}
+	.footer-container ul {
+		margin-top: 20px;
+	}
+	.footer-container p {
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 @media (max-width: 475px) {
@@ -222,7 +268,7 @@ li {
 	}
 	.footer-top-mobile {
 		padding-top: 20px;
-		padding-bottom: 0px;
+		padding-bottom: 20px;
 		margin-bottom: -20px;
 	}
 }

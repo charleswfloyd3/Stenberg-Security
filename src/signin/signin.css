@@ -196,3 +196,36 @@ button:focus {
 	cursor: pointer;
 	opacity: 0.8;
 }
+@media (max-width: 525px) {
+	.signin-inner {
+		width: 400px;
+	}
+	.newAcc,
+	.forgotPass {
+		font-size: 12px;
+		white-space: nowrap;
+	}
+}
+@media (max-width: 395px) {
+	.signin-inner {
+		width: 400px;
+	}
+	.newAcc {
+		font-size: 12px;
+		white-space: nowrap;
+		position: absolute;
+	}
+	.forgotPass {
+		font-size: 12px;
+		white-space: nowrap;
+		position: absolute;
+		right: 10vw;
+	}
+}
+@media (max-width: 330px) {
+	.loginBtnClassLink,
+	.loginBtnClever,
+	.loginBtnGoogle {
+		font-size: 12px;
+	}
+}

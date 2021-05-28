@@ -170,9 +170,74 @@
 }
 @media (max-width: 600px) {
 	.signupDescrip {
-		width: fit-content;
+		width: 80vw;
+	}
+	.signupTitle {
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+		width: 60vw;
+
+		/* border: 2px solid black; */
 	}
 	.signup-right {
 		width: 450px;
+	}
+	.meetingInput {
+		font-size: 12px;
+	}
+	.callInput {
+		font-size: 12px;
+	}
+	.signupformbtn {
+		font-size: 12px;
+		margin-left: -201px;
+	}
+}
+@media (max-width: 487px) {
+	.signup-right {
+		width: 90vw;
+	}
+	.signup-inner {
+	}
+}
+@media (max-width: 335px) {
+	.signup-right {
+		width: 90vw;
+		height: 720px;
+	}
+	.signupTitle {
+		font-size: 30px;
+	}
+	.signupDescrip {
+		font-size: 14px;
+	}
+}
+@media (max-width: 277px) {
+	.signup-right {
+		width: 90vw;
+		height: 740px;
+	}
+	.signupformbtn {
+		font-size: 10px;
+		margin-left: -67px;
+		margin-top: 60px;
+	}
+	.signupTitle {
+		font-size: 28px;
+	}
+}
+@media (max-width: 235px) {
+	.signup-right {
+		width: 90vw;
+		height: 740px;
+	}
+	.signupformbtn {
+		font-size: 10px;
+		margin-left: -67px;
+		margin-top: 60px;
+	}
+	.signupTitle {
+		font-size: 24px;
 	}
 }

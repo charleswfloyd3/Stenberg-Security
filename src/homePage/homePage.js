@@ -2,6 +2,7 @@ import React from 'react'
 import './homepage.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import {Link}  from 'react-router-dom';
 
 const HomePage = () => {
 AOS.init();
@@ -18,7 +19,7 @@ AOS.init();
                 </p>
                 <div className="infoBtns">
                     <p className="infoBtn">Get more Info</p>
-                    <p className="exploreBtn">Explore the suite</p>
+                    <p className="exploreBtn"><Link  style={{ color: 'inherit', textDecoration: 'inherit'}} to="/products">Explore the suite</Link></p>
                 </div>
             </div>
 
@@ -36,7 +37,7 @@ AOS.init();
                 </p>
                 <div className="infoBtns-mobile">
                     <p className="infoBtn-mobile">Get more Info</p>
-                    <p className="exploreBtn-mobile">Explore the suite</p>
+                    <p className="exploreBtn-mobile"><Link  style={{ color: 'inherit', textDecoration: 'inherit'}} to="/products">Explore the suite</Link></p>
                 </div>
             </div>
             

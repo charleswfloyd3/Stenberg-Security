@@ -11,6 +11,7 @@ import Pricing from './pricing/pricing';
 import Advert from './advert/advert';
 import Testimonials from './testimonials/testimonials';
 import Grabber from './grabber/grabber';
+import Products from './products/products';
 
 function App() {
   return (
@@ -34,6 +35,9 @@ function App() {
         </Route>
         <Route exact path="/pricing">
           <Pricing />
+        </Route>
+        <Route exact path="/products">
+          <Products />
         </Route>
       </div>
     </Switch>

@@ -1,5 +1,7 @@
 import React from 'react'
 import './footer.css'
+import {Link}  from 'react-router-dom';
+
 const Footer = () => {
     return (
         <div className="footer-outer">
@@ -47,7 +49,7 @@ const Footer = () => {
                 <li>Trust &amp; Privacy </li>                
             </ul>
             <ul className="contactSection"> 
-                <p ><a  href="" style={{color:"royalblue", textDecoration:"none"}}className="contactSectionTitle">SteinbergSecurity</a></p>
+                <p ><Link  href="" style={{color:"royalblue", textDecoration:"none"}} to="/" className="contactSectionTitle" onClick={()=>{window.scrollTo(0, 0)}}>SteinbergSecurity</Link></p>
                 <p className="brandDescrip">
                     A community collectively saving businesses, schools, and indivuals millions every day since 2008.
                 </p>
@@ -64,6 +66,23 @@ const Footer = () => {
                 {/* <p>SteinbergSecurity 2021. All rights reserved&copy;</p> */}
             </ul>
         </div>
+                    <ul className="contactSection-mobile"> 
+                <p ><Link style={{color:"royalblue", textDecoration:"none"}} to="/" className="contactSectionTitle" >SteinbergSecurity</Link></p>
+                <p className="brandDescrip">
+                    A community collectively saving businesses, schools, and indivuals millions every day since 2008.
+                </p>
+                <div className="appStores">
+                    <img src="images/appStore.png"className="appStore"></img>
+                    <img src="images/googlePlay.png" className="googlePlay"></img>
+                </div>
+                <div className="socialMedia">
+                    <img src="images/facebook.png" className="socialIcon"></img>
+                    <img src="images/instagram.png"  className="socialIcon"></img>
+                    <img src="images/twitter.png"  className="socialIcon"></img>                     <img src="images/linkedIn.png"  className="socialIcon"></img>                     <img src="images/youtube.png"  className="socialIcon"></img>
+                    <img src="images/medium.png"  className="socialIcon"></img>                   
+                </div>
+                {/* <p>SteinbergSecurity 2021. All rights reserved&copy;</p> */}
+            </ul>
         </div>
     )
 }
