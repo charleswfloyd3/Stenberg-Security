@@ -3,7 +3,7 @@ import './homepage.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import {Link}  from 'react-router-dom';
-
+import {LazyLoadImage} from 'react-lazy-load-image-component'
 const HomePage = () => {
 AOS.init();
 
@@ -24,7 +24,7 @@ AOS.init();
             </div>
 
             <div className='homepage-right' >
-                <img src="images/safety.jpg" className="homepageImage"></img>
+                <LazyLoadImage src="images/safety.jpg" effect="blur" className="homepageImage"/>
             </div>
 
             <div className='homepage-left-mobile'>
