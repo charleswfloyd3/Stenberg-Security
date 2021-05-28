@@ -1,4 +1,5 @@
 import React from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import './advert.css'
 const Advert = () => {
     return (
@@ -12,7 +13,7 @@ const Advert = () => {
             </div>
 
             <div className='homepage-right2' >
-                <img src="images/devices.png" className="homepageImage2"></img>
+                <LazyLoadImage src="images/devices.png" className="homepageImage2"/>
             </div>
             <div className='homepage-left2-mobile'>
                 <p className="headline2">Any device, anywhere.</p>
