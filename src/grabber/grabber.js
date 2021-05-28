@@ -11,7 +11,7 @@ const Grabber = () => {
             <div  className="content">
             <div className='content-outer'>
                 <div className="grabber-left">
-                    <img src="images/advert-img1.png" className="infoImg"></img>
+                    <img src="images/grabber.jpg" className="infoImg"></img>
                 </div>
                 <div className="grabber-right">
                     <div > 
