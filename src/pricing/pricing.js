@@ -12,7 +12,7 @@ const Pricing = () => {
                 <div className="signup-left">
                     <p className="signupTitle2">Request a quote</p>
                     <p className="signupDescrip">
-                        With a suite that includes multi-OS device filtering and monitoring, backend encrytopn, and phising prevention, SteinbergSecurity has everything you need to support a successful  technology program.
+                        With a suite that includes multi-OS device filtering and monitoring, backend encrytopn, and phising prevention, StenbergSecurity has everything you need to support a successful  technology program.
                     </p>
                     <LazyLoadImage src="images/stack.jpg" className="signupImage"/>
                 </div>

@@ -13,7 +13,7 @@ const Signup = () => {
                 <div className="signup-left">
                     <p className="signupTitle">Try StenbergSecurity for free</p>
                     <p className="signupDescrip">
-                        With a suite that includes multi-OS device filtering and monitoring, backend encrytopn, and phising prevention, SteinbergSecurity has everything you need to support a successful  technology program.
+                        With a suite that includes multi-OS device filtering and monitoring, backend encrytopn, and phising prevention, StenbergSecurity has everything you need to support a successful  technology program.
                     </p>
                     <img src="images/stack.jpg" className="signupImage"></img>
                 </div>

@@ -49,7 +49,7 @@ const Footer = () => {
                 <li>Trust &amp; Privacy </li>                
             </ul>
             <ul className="contactSection"> 
-                <p ><Link  href="" style={{color:"royalblue", textDecoration:"none"}} to="/" className="contactSectionTitle" onClick={()=>{window.scrollTo(0, 0)}}>SteinbergSecurity</Link></p>
+                <p ><Link  href="" style={{color:"royalblue", textDecoration:"none"}} to="/" className="contactSectionTitle" onClick={()=>{window.scrollTo(0, 0)}}>StenbergSecurity</Link></p>
                 <p className="brandDescrip">
                     A community collectively saving businesses, schools, and indivuals millions every day since 2008.
                 </p>
