@@ -11,7 +11,7 @@ const Signup = () => {
         <div className="signup-container">
             <div className="signup-inner">
                 <div className="signup-left">
-                    <p className="signupTitle">Try SteinbergSecurity for free</p>
+                    <p className="signupTitle">Try StenbergSecurity for free</p>
                     <p className="signupDescrip">
                         With a suite that includes multi-OS device filtering and monitoring, backend encrytopn, and phising prevention, SteinbergSecurity has everything you need to support a successful  technology program.
                     </p>

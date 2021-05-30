@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="nav-container">
             <nav className="nav-inner">
             <ul className="nav-left">
-                <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/"><li className="companyLogo" onClick={()=>{window.scrollTo(0, 0)}}> SteinbergSecurity</li></Link>
+                <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/"><li className="companyLogo" onClick={()=>{window.scrollTo(0, 0)}}> StenbergSecurity</li></Link>
                  <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/products"><li className="productsBtn">Products<img className="caretDown" src="images/caretDown.png"></img></li></Link>
                 <li className="resourcesBtn">Resources<img className="caretDown" src="images/caretDown.png"></img></li>
                  <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/pricing"><li className="pricingBtn" onClick={()=>{window.scrollTo(0, 0)}}>Pricing</li></Link>

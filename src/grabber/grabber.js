@@ -6,7 +6,7 @@ const Grabber = () => {
             <div className="grabber-inner">
                 <h1 className="grabber-headline">Powerful Alone. Stronger Together.</h1>
                 <p className="grabber-description">Unify your filtering, classroom management, and school mental health tools into a single suite.
-                GoGuardian’s suite of tools helps you maximize the learning potential of your 1:1 school technology program.</p>
+                SteinbergSecurity’s suite of tools helps you maximize the learning potential of your 1:1 school technology program.</p>
             </div>
             <div  className="content">
             <div className='content-outer'>

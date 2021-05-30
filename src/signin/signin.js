@@ -13,7 +13,7 @@ AOS.init();
         <div>
         <div className="signin-container" >
             <div className="signin-inner" data-aos="zoom-in">
-                <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/"><p className="companyNameSignIn"><p className="companyName">SteinbergSecurity</p></p></Link>
+                <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/"><p className="companyNameSignIn"><p className="companyName">StenbergSecurity</p></p></Link>
                 <p className='loginTitle'>Log in to your account</p>
                 <form action="/action_page.php" className="loginForm">
                     <input type="email" placeholder="Email" className="emailInput"></input><br></br>

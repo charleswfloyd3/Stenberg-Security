@@ -67,7 +67,7 @@ const Footer = () => {
             </ul>
         </div>
                     <ul className="contactSection-mobile"> 
-                <p ><Link style={{color:"royalblue", textDecoration:"none"}} to="/" className="contactSectionTitle" >SteinbergSecurity</Link></p>
+                <p ><Link style={{color:"royalblue", textDecoration:"none"}} to="/" className="contactSectionTitle" >StenbergSecurity</Link></p>
                 <p className="brandDescrip">
                     A community collectively saving businesses, schools, and indivuals millions every day since 2008.
                 </p>
