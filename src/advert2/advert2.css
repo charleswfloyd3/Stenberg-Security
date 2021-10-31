@@ -1,0 +1,150 @@
+.homepage2 {
+	display: flex;
+	justify-content: center;
+	/* border: 1px solid black; */
+}
+.homepage2-inner {
+	display: flex;
+	/* margin-top: 100px; */
+	justify-content: center;
+	/* justify-content: space-between; */
+
+	padding-top: 40px;
+	width: 80vw;
+	/* border: 2px solid black; */
+	padding-bottom: 0px;
+	margin-left: -8px;
+}
+.homepage-left2-mobile {
+	display: none;
+}
+.homepage-left2 {
+	/* margin-left: 16px; */
+
+	display: block;
+}
+.headline2 {
+	font-size: 46px;
+	font-weight: 600;
+	/* opacity:.8; */
+
+	/* position: absolute; */
+	color: royalblue;
+	letter-spacing: 1px;
+	margin-left: 0px;
+	white-space: nowrap;
+	/* color:black; */
+}
+.description2 {
+	font-size: 18px;
+	margin-left: 1px;
+	letter-spacing: 0.6px;
+
+	width: 600px;
+	margin-top: -10px;
+	font-weight: 400;
+	opacity: 0.7;
+}
+.homepageImage2 {
+	margin-left: 82px;
+	margin-top: -100px;
+	height: 500px;
+	border-radius: 2px;
+}
+@media (max-width: 1340px) {
+	.homepage2-inner {
+		margin-top: -100px;
+	}
+	.homepage-left2 {
+		margin-left: -4px;
+	}
+	.headline2 {
+		font-size: 46px;
+	}
+	.description2 {
+		font-size: 18px;
+		width: 440px;
+		letter-spacing: 0.6px;
+		opacity: 0.8;
+	}
+
+	.homepageImage2 {
+		height: 380px;
+		margin-top: -40px;
+		margin-left: 136px;
+	}
+}
+
+@media (max-width: 1020px) {
+	.homepage-left2 {
+		display: none;
+	}
+	.homepage-left2-mobile {
+		display: block;
+	}
+
+	.homepage2-inner {
+		display: block;
+		margin-top: 300px;
+		margin-bottom: -140px;
+	}
+	.headline2 {
+		text-align: center;
+		white-space: normal;
+	}
+	.description2 {
+		text-align: center;
+		/* border: 2px solid black; */
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+		width: 80vw;
+	}
+	.homepageImage2 {
+		/* border: 2px solid black; */
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -40px;
+	}
+}
+@media (max-width: 750px) {
+	.homepage2-inner {
+		padding-top: 0px;
+		margin-top: 250px;
+	}
+}
+
+@media (max-width: 570px) {
+	.homepageImage2 {
+		height: 320px;
+	}
+}
+@media (max-width: 475px) {
+	.homepageImage2 {
+		height: 280px;
+		margin-top: -160px;
+	}
+	.headline2 {
+		font-size: 38px;
+	}
+	.description2 {
+		font-size: 16px;
+	}
+}
+@media (max-width: 431px) {
+	.headline2 {
+		font-size: 30px;
+		white-space: nowrap;
+	}
+}
+@media (max-width: 390px) {
+	.headline2 {
+		font-size: 28px;
+		white-space: normal;
+	}
+	.homepageImage2 {
+		height: 200px;
+		margin-top: -120px;
+	}
+}

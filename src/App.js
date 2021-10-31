@@ -12,6 +12,7 @@ import Advert from './advert/advert';
 import Testimonials from './testimonials/testimonials';
 import Grabber from './grabber/grabber';
 import Products from './products/products';
+import Advert2 from './advert2/advert2';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Affiliations />
           <Grabber />
           <Advert />
+          <Advert2 />
           
           {/* <Testimonials /> */}
           <Footer />
