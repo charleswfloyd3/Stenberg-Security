@@ -1,0 +1,40 @@
+.signup-right-success{
+    width: 600px;
+	border: 0.1px solid transparent;
+	height: fit-content;
+	margin-top: 300px;
+	box-shadow: 0 1px 1px rgb(0 0 0 / 6%), 0 2px 2px rgb(0 0 0 / 6%),
+		0 4px 4px rgb(0 0 0 / 6%), 0 0 8px rgb(0 0 0 / 6%);
+	border-radius: 2.5px;
+	margin-right: 20px;
+
+
+}
+.form-success-div{
+    display: flex;
+    justify-content: center;
+    /* margin-top:160px; */
+
+}
+
+.form-success-description{
+    width: 90%;
+    font-size: 23px;
+}
+.checkmark{
+    height: 22px;
+    position: absolute;
+    padding-left:10px;
+    margin-top: 2.4px;
+}
+
+@media(max-width:1000px){
+    .signup-right-success{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 60px;
+        width: 84vw;
+    }
+    
+}

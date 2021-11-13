@@ -1,10 +1,91 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import Footer from '../footer/footer'
 import Navbar from '../navbar/navbar'
 import './signup.css'
+import '../pricing/pricing.css'
+
 import './test.css'
 
+import {useForm} from 'react-hook-form'
+
+
+function formatPhoneNumber(value) {
+    if (!value) return value;
+    const phoneNumber = value.replace(/[^\d]/g, "");
+    const phoneNumberLength = phoneNumber.length;
+    if (phoneNumberLength < 4) return phoneNumber;
+    if (phoneNumberLength < 7) {
+      return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3)}`;
+    }
+    return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(
+      3,
+      6
+    )}-${phoneNumber.slice(6, 10)}`;
+  }
 const Signup = () => {
+    
+    // react-form-hook stuff
+    const {register, handleSubmit} = useForm();
+    const [result, setResult] = useState("");
+
+    const onSubmit = async (data) => {
+            console.log(JSON.stringify(data))
+            setformStatus(false)                              
+             try{
+            const add = await fetch("http://localhost:5000/customer", {
+              method: "POST",
+              headers: {
+              "Content-Type": "application/json",
+              },
+              body:JSON.stringify(data),
+               });
+
+               }
+                              
+              catch(err){
+                console.error()
+                                }              
+    };
+    
+    const [inputValue, setInputValue] = useState("");
+    const handleInput = (e) => {
+      const formattedPhoneNumber = formatPhoneNumber(e.target.value);
+      setInputValue(formattedPhoneNumber);
+    }
+
+    let email = React.useRef(null)
+    let mailformat = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3}$/;
+
+    let [emailErrorMessage, setErrorMessageEmail] = useState("");
+    const [success, setsuccess] = useState("")
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setErrorMessageEmail('emailInput2')
+         }, 2000);
+       },[success]);
+
+    let handleChangeforemail = (e) =>{
+        let userData =  { email:  email.current.value}  
+        console.log(userData.email.match(mailformat))
+        if(userData.email.match(mailformat) == null){
+            setErrorMessageEmail('emailError')
+        }
+        else{
+            setErrorMessageEmail('emailSuccess')
+            setsuccess("success")
+
+            // setsuccess(email.current.value = email.current.value + "✅")
+
+        }
+
+        e.preventDefault()
+    }
+
+    const [formStatus, setformStatus] = useState(true)
+
+
+
+
     return (
         <div>
           <Navbar />
@@ -17,24 +98,38 @@ const Signup = () => {
                     </p>
                     <img src="images/stack.jpg" className="signupImage"></img>
                 </div>
-                <div className="signup-right">
-                <form action="/action_page.php" className="signupform">
+                <div className={formStatus?"signup-right": "signup-right-success"}>
+                {formStatus ? <form onSubmit={handleSubmit(onSubmit)} className="signupform">
                         <p className="firstnameTitle">First name</p>
-                        <input type="text" name="fname" className="fnameInput" ></input>
+                        <input type="text" name="fname" className="fnameInput" {...register('firstName')} required 
+                        ></input>
                         <p className="lastnameTitle">Last name</p>
-                        <input type="text" name="lname" className="lnameInput"></input>
+                        <input type="text" name="lname" className="lnameInput" {...register('lastName')} required></input>
                         <p className="emailTitleSignup">Email</p>
-                        <input type="email" name="email2" className="emailInput2"></input>
+                        <input type="email" name="email2" className="emailInput2" className={emailErrorMessage} ref={email} onChange={handleChangeforemail} placeholder="" {...register('email')} required></input>
                         <p className="jobTitle">Are you representing yourself or an organization?</p>
-                        <input type="text" name="personProtected" placeholder="" className="jobInput"></input>
+                        <select type="text" name="personProtected" placeholder="" className="jobInput" {...register('party')} required>
+                            <option hidden selected></option>
+                            <option>Organization</option>
+                            <option>Individual</option>
+                        </select>
                         <p className="phoneNumTitle">Phone number</p>
-                        <input type="tel" name="number" className="phoneNumInput" placeholder="(000) 000-0000" ></input>
+
+                        <input type="tel" name="number" className="phoneNumInput" placeholder="" {...register('phoneNumber')} required onChange={(e) => handleInput(e)} value={inputValue} ></input>
                         <p className="productTitle">Which product are you primarily interested in?</p>
-                        <input type="text" name="product" className="productInput"></input>
+                        <select type="text" name="product" className="productInput" {...register('product')} required>
+                                <option hidden selected ></option>
+                                <option>The Suite</option>
+                                <option>Admin</option>
+                                <option>Teacher</option>
+                                <option>Beacon</option>
+                                <option>Fleet</option>
+                                <option>DNS</option>
+                        </select>
                         <p className="countryTitle">Country</p>
-                        <select type="text" name="country" placeholder="Select a country" className="countryInput">
-                            <optgroup label="Select a country">
-                        <option data-countryCode="GB" value="44" Selected>USA</option>
+                        <select type="text" name="country" placeholder="Select a country" className="countryInput" {...register('country')} required>
+                                <option hidden selected></option>
+                                <option data-countryCode="GB" value="44" Selected>United States</option>
 
                                 <option data-countryCode="DZ" value="213">Algeria </option>
                                 <option data-countryCode="AD" value="376">Andorra </option>
@@ -249,19 +344,22 @@ const Signup = () => {
                                 <option data-countryCode="YE" value="967">Yemen (South)</option>
                                 <option data-countryCode="ZM" value="260">Zambia </option>
                                 <option data-countryCode="ZW" value="263">Zimbabwe </option>
-                            </optgroup>
                         </select>                        
                         <p className="devicesTitle">How many devices?</p>
-                        <input type="number" min="1" name="devices" className="devicesInput"></input>
-                        <p className="contactPrefTitle">Contact preference</p>
-                        <input type="button" name="bookmeeting" value="Book a meeting now" className="meetingInput"></input>
-                        <input type="button" name="callme" value="Call me" className="callInput"></input>
+                        <input type="number" min="1" name="devices" className="devicesInput" {...register('numOfDevices')} required></input>
+                        <p className="contactPrefTitle">
+                        <br></br>
+                        By clicking submit, you consent to allow GoGuardian to store and process the personal information submitted above.</p>
+                        {/* <input type="button" name="bookmeeting" value="Book a meeting now" className="meetingInput"></input> */}
+                        {/* <input type="button" name="callme" value="Call me" className="callInput"></input> */}
                         {/* <p className="newsletterTitle">May we contact you by email with additional information, news, and product updates?</p>
                         <input type="checkbox" name="yes" value="Yes" className="yesCheckInput"></input>
                         <input type="checkbox" name="no" className="noCheckInput"></input> */}
-                    <input type="submit" value="Submit Request" className='signupformbtn' ></input>
-
+                    <input type="submit" value="Submit" className='signupformbtn' ></input>
                 </form>
+                :<div className="form-success-div"><p className="form-success-description">Thank you for requesting a trial!<img src="images/greencheckmark.png" className="checkmark"></img>
+                <br />
+                We're excited to bring StenbergSecurity to your organization. A representative will be in touch shortly. In the meantime, please send any questions or comments to info@stenbergsecurity.com</p></div>}
                 </div>
             </div>
         </div>

@@ -6,23 +6,23 @@ const Footer = () => {
     return (
         <div className="footer-outer">
             <div className="footer-top">
-                <img src="images/cloud.png" className="aff"></img>
-                <img src="images/microsoft.png" className="aff"></img>
-                <img src="images/student.jpg" className="aff"></img>
-                <img src="images/ferpa.jpg" className="aff"></img>
-                <img src="images/ida.jpg" className="aff"></img>
-                <img src="images/gei.jpg" className="aff"></img>
+                <img src="images/cloud.png" className="aff" alt="google cloud"></img>
+                <img src="images/microsoft.png" className="aff" alt="microsoft"></img>
+                <img src="images/student.jpg" className="aff" alt="student"></img>
+                <img src="images/ferpa.jpg" className="aff" alt="ferpa"></img>
+                <img src="images/ida.jpg" className="aff" alt="ida"></img>
+                <img src="images/gei.jpg" className="aff" alt="gei"></img>
             </div>
            <div className="footer-top-mobile">
-               <div className="footer-top-mobile-top">             <img src="images/microsoft.png" className="aff"></img> <img src="images/cloud.png" className="aff"></img>
+               <div className="footer-top-mobile-top">             <img src="images/microsoft.png" className="aff" alt="microsoft"></img> <img src="images/cloud.png" className="aff" alt="google cloud"></img>
    
-                <img src="images/student.jpg" className="aff"></img>
+                <img src="images/student.jpg" className="aff" alt="student privacy pledge"></img>
 
                 </div>
                <div className="footer-top-mobile-bottom">
-                <img src="images/ferpa.jpg" className="aff"></img>                   
-                <img src="images/ida.jpg" className="aff"></img>
-                <img src="images/gei.jpg" className="aff"></img>
+                <img src="images/ferpa.jpg" className="aff" alt="ferpa"></img>                   
+                <img src="images/ida.jpg" className="aff" alt="ida"></img>
+                <img src="images/gei.jpg" className="aff" alt="gei"></img>
                 </div>
             </div>
         <div className="footer-container">
@@ -54,14 +54,14 @@ const Footer = () => {
                     A community collectively saving businesses, schools, and indivuals millions every day since 2008.
                 </p>
                 <div className="appStores">
-                    <img src="images/appStore.png"className="appStore"></img>
-                    <img src="images/googlePlay.png" className="googlePlay"></img>
+                    <img src="images/appStore.png"className="appStore"alt="app store"></img>
+                    <img src="images/googlePlay.png" className="googlePlay" alt="google play"></img>
                 </div>
                 <div className="socialMedia">
-                    <img src="images/facebook.png" className="socialIcon"></img>
-                    <img src="images/instagram.png"  className="socialIcon"></img>
-                    <img src="images/twitter.png"  className="socialIcon"></img>                     <img src="images/linkedIn.png"  className="socialIcon"></img>                     <img src="images/youtube.png"  className="socialIcon"></img>
-                    <img src="images/medium.png"  className="socialIcon"></img>                   
+                    <img src="images/facebook.png" className="socialIcon" alt='facebook'></img>
+                    <img src="images/instagram.png"  className="socialIcon" alt="instagram"></img>
+                    <img src="images/twitter.png"  className="socialIcon" alt="twitter"></img>                     <img src="images/linkedIn.png"  className="socialIcon" alt="linkedIn"></img>                     <img src="images/youtube.png"  className="socialIcon" alt="youtube"></img>
+                    <img src="images/medium.png"  className="socialIcon" alt="medium"></img>                   
                 </div>
                 {/* <p>SteinbergSecurity 2021. All rights reserved&copy;</p> */}
             </ul>
