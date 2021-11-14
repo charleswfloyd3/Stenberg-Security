@@ -32,7 +32,7 @@ const Signup = () => {
             console.log(JSON.stringify(data))
             setformStatus(false)                              
              try{
-            const add = await fetch("http://localhost:5000/customer", {
+            const add = await fetch("https://herokstenberg.herokuapp.com/customer", {
               method: "POST",
               headers: {
               "Content-Type": "application/json",
